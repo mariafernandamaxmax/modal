@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    color:rgb(234, 0, 255)
+}
+h1{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(229, 255, 196);
+    color: rgb(220, 43, 226);
+}
+.janelaModal{
+    display:none;
+    position: fixed;
+    width: 100%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.877);
+    justify-content: center;
+    align-items: center;
+}
+.janelaModal .fecharModal{
+    position: absolute;
+    top:20px
+    right :20px;
+    font-size : 2rem;
+    font-weight:700;
+    cursor: pointer;
+}
+
+#modal:checked + .janelaModal{
+    display: flex;
+}
+.checkModal {
+    display: none;
+}
+
+.janelaModal .fecharModal:hover{
+    background-color: rgb(54, 42, 42);
+    color: rgb(219, 180, 132);
+}
+.conteudo{
+    width:75%;
+    height: 50%;
+    background-color: antiquewhite;
+    border: 20px solid lightblue;
+    border-radius: 15px;
+    box-shadow: 5px 6px 10px darkcyan;
+    text-align: center;
+    overflow: auto;
+}
+.abrirModal{
+    cursor: pointer;
+}
+.conteudo p {
+    color: rgb(0, 150, 155);
+}
